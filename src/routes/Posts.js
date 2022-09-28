@@ -22,7 +22,7 @@ function Posts() {
       <ul>
         {data.map((post) => (
           <li key={post.id}>
-            <Link to={post.id}>{post.title}</Link>
+            <Link to={`/${post.id}`}>{post.title}</Link>
           </li>
         ))}
       </ul>
